@@ -1,7 +1,7 @@
 import { Shield, Check, LockKeyhole, BadgeCheck, Headphones } from 'lucide-react';
-import offerImage from '../../imagens/oferta.png';
-import bonusImage from '../../imagens/bonus.png';
-import offerStackImage from '../../imagens/offer_stack.png';
+const offerImage = '/imagens/oferta.png';
+const bonusImage = '/imagens/bonus.png';
+const offerStackImage = '/imagens/offer_stack.png';
 import { trackInitiateCheckout } from '../utils/trackInitiateCheckout';
 
 const includes = [
