@@ -26,7 +26,7 @@ export default function InvisibleCost() {
             <div className="flex-1 space-y-2 sm:space-y-3">
               <div className="relative rounded-sm overflow-hidden" style={{ aspectRatio: '3/4' }}>
                 <img
-                  src="imagens\Antes.png"
+                  src="/imagens\Antes.png"
                   alt="Antes"
                   className="w-full h-full object-cover filter grayscale brightness-80"
                 />
@@ -49,7 +49,7 @@ export default function InvisibleCost() {
             <div className="flex-1 space-y-3">
               <div className="relative rounded-sm overflow-hidden" style={{ aspectRatio: '3/4' }}>
                 <img
-                  src="imagens/Depois.png"
+                  src="/imagens/Depois.png"
                   alt="Depois"
                   className="w-full h-full object-cover"
                 />
