@@ -13,6 +13,21 @@ const includes = [
   '+4 Materiais bônus exclusivos',
 ];
 
+function trackInitiateCheckout() {
+  const metaPixel = (
+    window as Window & {
+      fbq?: (action: 'track', eventName: string, params?: Record<string, string | number>) => void;
+    }
+  ).fbq;
+
+  if (typeof metaPixel !== 'function') return;
+
+  metaPixel('track', 'InitiateCheckout', {
+    content_name: 'AI Photo Mastery',
+    content_category: 'Oferta',
+  });
+}
+
 export default function Offer() {
   return (
     <section id="oferta" className="section-shell">
@@ -64,6 +79,7 @@ export default function Offer() {
                 href="https://pay.kiwify.com.br/YeSpnD6"
                 target="_blank"
                 rel="noreferrer"
+                onClick={trackInitiateCheckout}
                 className="block overflow-hidden rounded-sm border border-brand-border/60 bg-brand-bgSecondary/40 transition-opacity hover:opacity-95"
               >
                 <img src={offerStackImage} alt="Oferta AI Photo Mastery com acesso ao sistema" className="w-full h-full object-cover" />
