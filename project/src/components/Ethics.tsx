@@ -17,7 +17,7 @@ export default function Ethics() {
             <div className="absolute -inset-8 bg-brand-gold/5 rounded-sm blur-3xl" />
             <div className="relative rounded-sm overflow-hidden" style={{ aspectRatio: '4/5' }}>
               <img
-                src="imagens/Ethics.png"
+                src="/imagens/Ethics.png"
                 alt="Estetica masculina moderna"
                 className="w-full h-full object-cover"
               />
