@@ -1,4 +1,4 @@
-const afterHeroImage = '/imagens/After_Hero.png';
+const afterHeroImage = 'imagens/After_Hero.png';
 
 export default function ModernDating() {
   const signals = ['Status', 'Lifestyle', 'Inteligência social', 'Autopercepção', 'Sofisticação'];
