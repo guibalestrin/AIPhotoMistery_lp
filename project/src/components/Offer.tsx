@@ -1,6 +1,7 @@
 import { Shield, Check, LockKeyhole, BadgeCheck, Headphones } from 'lucide-react';
 import offerImage from '../../imagens/oferta.png';
 import bonusImage from '../../imagens/bonus.png';
+import offerStackImage from '../../imagens/offer_stack.png';
 import { trackInitiateCheckout } from '../utils/trackInitiateCheckout';
 
 const includes = [
@@ -68,6 +69,10 @@ export default function Offer() {
           <div className="p-4 sm:p-6 md:p-8">
             <div className="mx-auto max-w-2xl">
               <div className="overflow-hidden rounded-sm border border-brand-border/60 bg-brand-bgSecondary/40 px-4 py-5 sm:px-6 sm:py-6 md:px-8 md:py-7">
+                <div className="mb-5 overflow-hidden rounded-sm border border-brand-border/60 bg-brand-bgSecondary/40 sm:mb-6">
+                  <img src={offerStackImage} alt="Oferta AI Photo Mastery com acesso ao sistema" className="w-full h-full object-cover" />
+                </div>
+
                 <a
                   href="https://pay.kiwify.com.br/YeSpnD6"
                   target="_blank"
