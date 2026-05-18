@@ -1,4 +1,4 @@
-import mechanismImage from '../../imagens/Mecanismo2.png';
+const mechanismImage = '/imagens/Mecanismo2.png';
 
 export default function Mechanism() {
   return (
