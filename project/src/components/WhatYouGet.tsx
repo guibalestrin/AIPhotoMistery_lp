@@ -1,9 +1,9 @@
 import { useEffect, useRef, useState } from 'react';
-import card1Image from '../../imagens/card_1.png';
-import card2Image from '../../imagens/card_2.png';
-import card3Image from '../../imagens/card_3.png';
-import card4Image from '../../imagens/card_4.png';
-import card5Image from '../../imagens/card_5.png';
+const card1Image = '/imagens/card_1.png';
+const card2Image = '/imagens/card_2.png';
+const card3Image = '/imagens/card_3.png';
+const card4Image = '/imagens/card_4.png';
+const card5Image = '/imagens/card_5.png';
 
 type ModuleCard = {
   id: string;
