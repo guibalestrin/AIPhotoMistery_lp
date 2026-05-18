@@ -1,4 +1,4 @@
-import antiCatfishImage from '../../imagens/Anti_Catfish.png';
+import antiCatfishImage from '../public/imagens/Anti_Catfish.png';
 
 const focus = [
   'Naturalidade',
