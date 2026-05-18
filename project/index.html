@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/Insta.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> AI Photo Mastery - Caverna de Alexandria</title>
+    <meta
+      name="description"
+      content="Sistema premium de otimizacao visual masculina usando IA, percepcao digital e direcao estetica moderna."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+      data-utmify-prevent-xcod-sck
+      data-utmify-prevent-subids
+      async
+      defer
+    ></script>
+    <script>
+      // ALTERE O LINK PARA A PAGINA QUE QUISER MOSTRAR QUANDO O USUARIO TENTAR SAIR
+      const link = 'https://aiphotomastery.vercel.app';
+
+      function setBackRedirect(url) {
+        let urlBackRedirect = url;
+        urlBackRedirect =
+          urlBackRedirect.trim() +
+          (urlBackRedirect.indexOf('?') > 0 ? '&' : '?') +
+          document.location.search.replace('?', '').toString();
+
+        history.pushState({}, '', location.href);
+        history.pushState({}, '', location.href);
+        history.pushState({}, '', location.href);
+
+        window.addEventListener('popstate', () => {
+          console.log('onpopstate', urlBackRedirect);
+          setTimeout(() => {
+            location.href = urlBackRedirect;
+          }, 1);
+        });
+      }
+
+      setBackRedirect(link);
+    </script>
+    <script>
+      window.pixelId = '6a0a6d28b7f3d8784b4d57a8';
+      var a = document.createElement('script');
+      a.setAttribute('async', '');
+      a.setAttribute('defer', '');
+      a.setAttribute('src', 'https://cdn.utmify.com.br/scripts/pixel/pixel.js');
+      document.head.appendChild(a);
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

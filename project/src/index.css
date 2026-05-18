@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #0B0B0D;
+    color: #F4F1EC;
+    font-family: 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background-color: #A88A5A;
+    color: #0B0B0D;
+  }
+
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0B0B0D;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #2A2A2E;
+    border-radius: 2px;
+  }
+}
+
+@layer components {
+  .section-label {
+    @apply text-[10px] font-sans font-medium tracking-[0.3em] uppercase text-brand-gold;
+  }
+
+  .headline-xl {
+    @apply font-serif text-4xl md:text-5xl lg:text-6xl font-light leading-[1.1] tracking-tight text-brand-text;
+  }
+
+  .headline-lg {
+    @apply font-serif text-3xl md:text-4xl lg:text-5xl font-light leading-[1.15] tracking-tight text-brand-text;
+  }
+
+  .headline-md {
+    @apply font-serif text-2xl md:text-3xl font-light leading-[1.2] tracking-tight text-brand-text;
+  }
+
+  .body-text {
+    @apply font-sans text-sm md:text-base font-light leading-[1.7] text-brand-textMuted;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 bg-brand-redDark hover:bg-brand-red text-brand-bg text-sm font-sans font-medium tracking-[0.08em] uppercase px-8 py-4 rounded transition-all duration-300;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 border border-brand-border hover:border-brand-gold text-brand-textMuted hover:text-brand-gold text-sm font-sans font-medium tracking-[0.08em] uppercase px-8 py-4 rounded transition-all duration-300;
+  }
+
+  .highlight-box {
+    @apply border-l-2 border-brand-gold pl-6 py-2 my-6;
+  }
+
+  .section-divider {
+    @apply w-12 h-px bg-brand-gold my-8;
+  }
+
+  .section-shell {
+    @apply relative overflow-hidden pt-16 sm:pt-24 md:pt-36;
+  }
+
+  .card-premium {
+    @apply bg-brand-bgSecondary border border-brand-border rounded p-6 transition-all duration-300 hover:border-brand-gold/30;
+  }
+}
